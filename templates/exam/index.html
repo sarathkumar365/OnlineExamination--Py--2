@@ -1,0 +1,115 @@
+<!-- <!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="../../static//css/index.css" />
+  </head>
+  <style>
+    .jumbotron {
+      margin-bottom: 0px;
+      min-height: 70vh; /* Set the minimum height to 100% of the viewport height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .font {
+      font-size: 8em;
+    }
+  </style>
+  <body>
+    {% include "exam/navbar.html" %}
+    <br />
+    <section
+      id="section-jumbotron"
+      class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center m-5 bg-light"
+    >
+      <div class="container text-center">
+        <h2
+          class="display-4 text-danger text-info"
+          style="font-family: 'Ubuntu'"
+        >
+          QuizzYou
+        </h2>
+        <p class="d-none d-sm-block display-5">Get ready to teke the quizz</p>
+        <p class="lead">Sign Up now to start your test</p>
+
+        <a
+          href="/student/studentsignup"
+          class="btn btn-lg btn-warning font-weight-bold"
+          style="padding-right: 15px; border-radius: 10px"
+          ><i class="" aria-hidden="true"></i> Sign Up as Student</a
+        >
+
+        <br /><br /><br />
+      </div>
+    </section>
+    <!-- {% include "exam/footer.html" %} -->
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="../../static/css/index.css" />
+  </head>
+  <style>
+    .jumbotron {
+      margin-bottom: 0px;
+      min-height: 70vh; /* Set the minimum height to 100% of the viewport height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .font {
+      font-size: 8em;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center; /* Align content to the right */
+      align-items: center;
+      gap: 8em;
+    }
+
+    img {
+      opacity: .8;
+      border-radius: 8px;
+    }
+
+    .text-content {
+      text-align: center; /* Center text content */
+      max-width: 50%; /* Adjust the width of the text content */
+    }
+  </style>
+  <body>
+    {% include "exam/navbar.html" %}
+    <br />
+    <section
+      id="section-jumbotron"
+      class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center m-5 bg-light"
+    >
+      <div class="container">
+        <!-- Image on the left -->
+        <img src="https://t3.ftcdn.net/jpg/03/45/97/36/360_F_345973621_sMifpCogXNoIDjmXlbLwx1QZA5ZmQVl8.jpg" alt="Left Image" style="max-width: 50%; margin-right: 20px;">
+        
+        <!-- Text content on the right -->
+        <div class="text-content">
+          <h2 class="display-4 text-danger text-info" style="font-family: 'Ubuntu'">QuizzYou</h2>
+          <p class="d-none d-sm-block display-5">Get ready to take the quiz</p>
+          <p class="lead">Sign Up now to start your test</p>
+          
+          <a href="/student/studentsignup" class="btn btn-lg btn-warning font-weight-bold" style="padding-right: 15px; border-radius: 10px">
+            <i class="" aria-hidden="true"></i> Sign Up as Student
+          </a>
+
+          <br /><br /><br />
+        </div>
+      </div>
+    </section>
+    <!-- {% include "exam/footer.html" %} -->
+  </body>
+</html>

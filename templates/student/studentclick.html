@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <style media="screen">
+      .jumbotron {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 93vh;
+      }
+
+      .jumbotron h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    {% include "exam/navbar.html" %}
+    <br /><br />
+    <div class="jumbotron" style="margin-bottom: 0px">
+      <h1 class="display-5 text-danger">Ready for the quizz !!</h1>
+      <hr class="my-4" />
+      <!-- <p class="display-4">CHOOSE</p> -->
+      <p
+        class="lead mt-5 d-flex justify-content-center align-items-center flex-column"
+      >
+        <a
+          class="btn btn-secondary"
+          href="studentsignup"
+          style="border-radius: 8px"
+          role="button"
+          >Create Your Account</a
+        >
+        <a
+          class="btn btn-info mt-3"
+          href="studentlogin"
+          style="border-radius: 8px"
+          role="button"
+          >Login Now</a
+        >
+      </p>
+      <br /><br /><br /><br /><br /><br />
+    </div>
+
+    <!-- {% include "exam/footer.html" %} -->
+  </body>
+</html>
