@@ -8,9 +8,9 @@ from django.conf import settings
 from datetime import date, timedelta
 from django.db.models import Q
 from django.core.mail import send_mail
-from teacher import models as TMODEL
+# from teacher import models as TMODEL
 from student import models as SMODEL
-from teacher import forms as TFORM
+# from teacher import forms as TFORM
 from student import forms as SFORM
 from django.contrib.auth.models import User
 
